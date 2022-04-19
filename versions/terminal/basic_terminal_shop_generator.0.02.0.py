@@ -27,21 +27,20 @@ def roll_for_rarity():
   Returns:
       dict: returns a dictionary that has a string value for 'rarity' and an integer (value between 1-100) for 'd100'.
   """
-  d100 = randint(1,100)
   roll_and_result = {
     "rarity": '',
     "d100": randint(1,100)
   }
 
-  if d100 in range(COMMON_RANGE[0], COMMON_RANGE[1]):
+  if roll_and_result['d100'] in range(COMMON_RANGE[0], COMMON_RANGE[1]):
     roll_and_result['rarity'] = 'common'
-  elif d100 in range(UNCOMMON_RANGE[0], UNCOMMON_RANGE[1]):
+  elif roll_and_result['d100'] in range(UNCOMMON_RANGE[0], UNCOMMON_RANGE[1]):
     roll_and_result['rarity'] = 'uncommon'
-  elif d100 in range(RARE_RANGE[0], RARE_RANGE[1]):
+  elif roll_and_result['d100'] in range(RARE_RANGE[0], RARE_RANGE[1]):
     roll_and_result['rarity'] = 'rare'
-  elif d100 in range(VERY_RARE_RANGE[0], VERY_RARE_RANGE[1]):
+  elif roll_and_result['d100'] in range(VERY_RARE_RANGE[0], VERY_RARE_RANGE[1]):
     roll_and_result['rarity'] = 'very rare'
-  elif d100 in range(LEGENDARY_RANGE[0], LEGENDARY_RANGE[1]):
+  elif roll_and_result['d100'] in range(LEGENDARY_RANGE[0], LEGENDARY_RANGE[1]):
     roll_and_result['rarity'] = 'legendary'
   return roll_and_result
 
