@@ -2,6 +2,8 @@
 
 ## JSON Data
 - [ ] Add variation rolls to items with a search expression of: `"notes": "[a-z].*"`. (Progress: Line 4847)
+- [x] Create a basic Avrae Discord alias
+- [x] Create a basic terminal app  
 - [x] Add Legendary Items
 - [ ] Add Potions
 - [ ] Add Spell Scrolls
