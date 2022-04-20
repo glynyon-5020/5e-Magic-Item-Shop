@@ -1,6 +1,3 @@
-# Avrae Alias: `!magic_shop #`
-
-```py
 !alias populate_shop embed &1&
 <drac2>
 num_of_items=max(0,int("&1&")) if "&1&".isdigit() else 1
@@ -47,4 +44,3 @@ F = f"`!populate_shop #` # = items to generate"
 -f "{{F}}"
 -color 9c27b0
 -thumb https://i.ibb.co/qk5rx2n/shop-removebg-preview.png
-```
