@@ -20,19 +20,19 @@ stock=[]
 for _ in range(num_of_items):
 	iroll,r,item=randint(100),'',''
 	if iroll in range(cr[0],cr[1]):
-		item=ci[randint(len(ci))]
+		item=ci[randint(len(ci)-1)]
 		r='Common'
 	elif iroll in range(ur[0],ur[1]):
-		item=ui[randint(len(ui))]
+		item=ui[randint(len(ui)-1)]
 		r='Uncommon'
 	elif iroll in range(rr[0],rr[1]):
-		item=ri[randint(len(ri))]
+		item=ri[randint(len(ri)-1)]
 		r='Rare'
 	elif iroll in range(vr[0],vr[1]):
-		item=vi[randint(len(vi))]
+		item=vi[randint(len(vi)-1)]
 		r='Very Rare'
 	elif iroll in range(lr[0],lr[1]):
-		item=li[randint(len(li))]
+		item=li[randint(len(li)-1)]
 		r='Legendary'
 	else:
 		pass
